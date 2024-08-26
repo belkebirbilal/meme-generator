@@ -4,14 +4,17 @@ import "./Meme.css";
 function Meme() {
     return (
         <form>
-            <span>
-                <label for="">top text</label>
-                <input type='text' id="top-text" />
-            </span>
-            <span>
-                <label for="bottom-text">bottom text</label>
-                <input type='text' id='bottom=text' />
-            </span>
+            <div className='cont'>
+                <div>
+                    <label for="">top text</label><br />
+                    <input type='text' id="top-text" />
+                </div>
+                <div>
+                    <label for="bottom-text">bottom text</label><br />
+                    <input type='text' id='bottom=text' />
+                </div>
+            </div>
+            <input type='submit' id="submit" value="git a new meme image" />
         </form>
     )
 }
