@@ -5,7 +5,7 @@ import "./Meme.css";
 
 
 function Meme() {
-    const [url , setUrl] = React.useState('')
+    const [url , setUrl] = React.useState('https://i.imgflip.com/25w3.jpg')
     function handleClick() {
         const random = Math.floor(Math.random() * Data.data.memes.length)
         setUrl(Data.data.memes[random].url)
