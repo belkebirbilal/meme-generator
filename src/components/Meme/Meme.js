@@ -11,7 +11,7 @@ function Meme() {
                 </div>
                 <div>
                     <label for="bottom-text">bottom text</label><br />
-                    <input type='text' id='bottom=text' />
+                    <input type='text' id='bottom-text' />
                 </div>
             </div>
             <input type='submit' id="submit" value="git a new meme image" />

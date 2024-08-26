@@ -1,0 +1,34 @@
+form {
+    width: 50%;
+    margin: 40px auto 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    justify-content: space-between;
+}
+
+.cont {
+    display: flex;
+}
+
+.cont div {
+    margin-inline: 20px;
+}
+
+#top-text,
+#bottom-text {
+    padding: 7px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgb(224, 224, 224);
+}
+
+#submit {
+    width: 55%;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgb(158, 89, 158);
+    color: white;
+    border: none;
+}
