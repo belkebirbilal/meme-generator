@@ -3,7 +3,7 @@ import "./Meme.css";
 
 function Meme() {
     return (
-        <form>
+        <div className='container'>
             <div className='cont'>
                 <div>
                     <label for="">top text</label><br />
@@ -14,8 +14,8 @@ function Meme() {
                     <input type='text' id='bottom-text' />
                 </div>
             </div>
-            <input type='submit' id="submit" value="git a new meme image" />
-        </form>
+            <button id="button">git a new meme image</button>
+        </div>
     )
 }
 
