@@ -1,5 +1,4 @@
 import React from 'react';
-import Data from "../MemeData"
 import "./Meme.css";
 
 
@@ -19,7 +18,6 @@ function Meme() {
         }
         getMeme()
     }, [])
-    console.log(data)
     function handleClick() {
         const random = Math.floor(Math.random() * data.length)
         setUrl(data[random].url)
