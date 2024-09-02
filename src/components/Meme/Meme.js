@@ -10,9 +10,19 @@ function Meme() {
         top_text: "",
         bottom_text: ""
     })
+    const [data , setData] = React.useState([])
+    React.useEffect(() => {
+        const getMeme = async () => {
+            const response = await fetch('https://api.imgflip.com/get_memes')
+            const results = await response.json()
+            setData(results.data.memes)
+        }
+        getMeme()
+    }, [])
+    console.log(data)
     function handleClick() {
-        const random = Math.floor(Math.random() * Data.data.memes.length)
-        setUrl(Data.data.memes[random].url)
+        const random = Math.floor(Math.random() * data.length)
+        setUrl(data[random].url)
     }
     function handleChange(event) {
         const { name , value } = event.target
